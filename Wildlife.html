@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife | WWF</title>
+    <link rel="icon" href="https://cdnassets.panda.org/_skins/international/img/logo.png" type="image/x-icon">
+    <style>
+        .navbar {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex; 
+            align-items: center; /* Center items vertically */
+            padding: 10px;
+            background-color: white;
+        }
+
+        .navbar-logo {
+            margin-right: 10px; 
+        }
+
+        .navbar-item:hover {
+    color: #DD681B; /* Change color on hover */
+        }
+
+        .navbar-items {
+            display: flex;
+            list-style: none; 
+            padding: 0px; 
+            font-size: 20px;
+            justify-content: left;
+            
+        }
+
+        .navbar-item {
+            margin-left: 20px;
+     
+        }
+
+        .navbar-toggler {
+            display: none; 
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #DD681B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+            border-radius: 8px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar-items {
+                display: none; 
+               
+            }
+
+            .navbar-toggler {
+                display: block; 
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .navbar-items.active {
+                display: flex; /* Display items when toggler is clicked */
+                flex-direction: column; /* Stack items vertically */
+                position: absolute; /* Position items absolutely */
+                top: 50px; /* Offset from the top */
+                background-color: white; /* Background color */
+                width: 100%; /* Full width */
+                z-index: 1; /* Ensure it's above other elements */
+            }
+        }
+
+        
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: black;
+        }
+
+        .carousel-title {
+        
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="https://cdnassets.panda.org/_skins/international/img/logo.png" alt="Logo" width="90px" height="101.13px">
+        </div>
+
+        <ul class="navbar-items" style="justify-content: right;">
+            <li><a href="C:\Users\nomn\Desktop\New folder\Wildlife.html" class="navbar-item">Home</a></li>
+            <li><a href="C:\Users\nomn\Desktop\New folder\About us.html" class="navbar-item">About Us</a></li>
+            <li><a href="C:\Users\nomn\Desktop\New folder\Contact.html" class="navbar-item">Contact Us</a></li>
+        </ul>
+        
+        <button class="search-button">Search</button>
+        <div class="navbar-toggler" onclick="toggleNavbar()">☰</div>
+
+    </nav>
+
+    <script>
+        function toggleNavbar() {
+            const navbarItems = document.querySelector('.navbar-items');
+            navbarItems.classList.toggle('active');
+        }
+    </script>
+
+<div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item=active">
+        <img src="https://wwfasia.awsassets.panda.org/img/original/img_8_812.jpg" height="600" width="1340">
+        <div class="carousel-title">WELCOME TO WILDLIFE</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
